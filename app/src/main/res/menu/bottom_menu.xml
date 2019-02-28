@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"/>
+
+    <item android:id="@+id/request_eot"
+        android:icon="@drawable/ic_update_black_24dp"
+        android:title="Request EOT"/>
+
+    <item android:id="@+id/description"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="Description"/>
+
+</menu>

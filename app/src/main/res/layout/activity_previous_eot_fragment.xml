@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:background="#003366"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Previous EOT Requests"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellay4"
+            android:layout_below="@+id/rellay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_request_display"
+            android:elevation="1dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/rellay_eot_request1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/rejected" />
+            <TextView
+                android:id="@+id/tv_projectName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="NH-24 Maintenence"
+                android:textColor="#00042e"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_projectId1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_projectName1"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Project ID: MORTH000111"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_contractorName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_projectId1"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Contractor Name: Panda Construction Pvt Ltd"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_reason1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_contractorName1"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Reason: Heavy Rain"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_from_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_reason1"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="From: 09-01-2019"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_to_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_from_date1"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="To: 11-01-2019"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_comments1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_to_date1"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Comments: --"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/rellay_eot_request1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/tv_comments1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/status_bg_r">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Rejected"
+                    android:textColor="#ffffff" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellay3"
+            android:layout_below="@id/rellay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_request_display"
+            android:elevation="1dp"
+            android:paddingTop="10dp">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/rellay_eot_request"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/success" />
+
+
+            <TextView
+                android:id="@+id/tv_projectId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_projectName"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Project ID: MORTH000111"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_contractorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_projectId"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Contractor Name: Panda Construction Pvt Ltd"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_contractorName"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Reason: Heavy Rain"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_from_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_reason"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="From: 04-01-2019"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_to_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_from_date"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="To: 08-01-2019"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_to_date"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Comments: --"
+                android:textColor="#272727"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/rellay_eot_request"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/tv_comments"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/status_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/status_bg"
+                    android:text="Accepted"
+                    android:textColor="#ffffff" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_projectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="NH-24 Maintenence"
+                android:textColor="#00042e"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

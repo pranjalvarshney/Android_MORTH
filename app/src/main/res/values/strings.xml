@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app_ui</string>
+
+    <string name="login_preferences">com.example.qwerty.app_ui_login_pref</string>
+    <string name="login_status_preferences">com.example.qwerty.app_ui_login_status_pref</string>
+    <string name="previous_eot_requests">Previous EOT Requests</string>
+</resources>
